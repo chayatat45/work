@@ -1,0 +1,96 @@
+<div class="quote-container">
+
+  <div class="title">
+    <span>ราคา</span>
+  </div>
+
+  <div class="container">
+
+    <div class="group-box1">
+
+      <div class="headder">
+
+        <div class="logo">
+          <img src="../../../../assets/payment/botnoivoicelogo-removebg.png">
+        </div>
+
+        <div class="text">
+          <span style="font-size: 19px;">สร้างเสียงที่คุณต้องการได้ในราคาเริ่มต้น</span>
+          <span style="font-size: 35px;">1 บาท / 50 ตัวอักษร</span>
+          <span style="font-size: 9px;">(เฉลี่ย 10 บาท / 1 นาที)</span>
+        </div>
+
+        <div class="buybutton">
+
+        <button class="btn-click" [routerLink]="['../']">
+          <span>ซื้อพ้อยท์</span>
+        </button>
+
+        </div>
+
+      </div>
+
+      <div class="container-slide">
+        <div class="silde" >
+            <ng-container >
+              <div>
+                <button style="border: none; background: transparent;" (click)="onNext1()" >
+                  <img src="../../../../assets/payment/Expand_left.png">
+                </button>
+              </div>
+                <!-- <button type="button"(click)="onNext1()">
+                  Next
+                </button> -->
+                  <div style="display:flex">
+                    <div *ngFor="let img of group; let i = index">
+                      <img [@simpleFadeAnimation]="group.length"  [src]="img.image" style="margin:20px;height:200px; width:200px" />
+                      <div><p>Hello {{ img.message }}</p></div>
+                    </div>    
+                 </div>
+                 <div>
+                  <button style="border: none; background: transparent;" (click)="onPrevious1()" >
+                    <img src="../../../../assets/payment/Expand_right.png">
+                  </button>
+                 </div>
+                <!-- <button type="button" (click)="onPrevious1()" >
+                  Previous
+                </button> -->
+            </ng-container>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="group-box2">
+
+      <div class="box-2">
+
+        <div class="group-text">
+          <span>ยิ่งซื้อมาก ยิ่งถูกมาก</span>
+          <span>ลดสูงสุดมากกว่า 40%</span>
+        </div>
+
+        <button class="btn-click" [routerLink]="['../']">
+          <span>ดูรายละเอียดเพิ่มเติม</span>
+        </button>
+
+      </div>
+
+      <div class="box-3">
+
+        <div class="group-text">
+          <span>ขอใบกำกับภาษี, ใบเสนอราคา</span>
+          <span>และราคาพิเศษจำนวนมาก</span>
+        </div>
+
+        <button class="btn-click" (click)="gotoDocs()">
+          <span>กดเลย!</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

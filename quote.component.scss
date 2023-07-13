@@ -1,0 +1,179 @@
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 32px;
+  padding: 32px 15%;
+
+  .btn-click{
+    background: #FFFFFF;
+    border: 1px solid #21C0F9;
+    border-radius: 10px;
+    color: #21C0F9;
+    height: 38px;
+    padding: 0 23px;
+  }
+
+  span {
+    font-family: 'Sarabun';
+  }
+
+  .title {
+    align-self: center;
+
+    span {
+      color: #323130;
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 985px;
+    max-height: 520px;
+    gap: 16px;
+
+    .group-box1{
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+      max-width: 985px;
+      max-height: 365px;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #01BFFB 41.89%, rgba(1, 191, 251, 0.56) 100%);
+      box-shadow: 0px 3px 10px rgba(50, 60, 76, 0.05);
+      border-radius: 10px;
+      // padding-right: 24px;
+      position: relative;
+
+      // .mat-tab{
+      //   display: flex;
+      //   flex-direction: row;
+      //   height: 100%;
+      //   width: 100%;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+
+      //   mat-tab-group{
+      //     display: flex;
+      //     flex-direction: row;
+      //     flex: 5;
+      //     width: 100%;
+      //   }
+      //   button{
+      //     flex: 1;
+      //     background-color: transparent;
+      //     border: none;
+      //     height: 100%;
+      //     width: 100%;
+      //   }
+      //   .tabs1,.tabs2,.tabs3{
+      //     flex: 1;
+      //   }
+      // }  
+      
+      .silde{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        max-width: 985px;
+        max-height: 365px;
+      }
+      .logo{
+        flex:1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        > img{
+            width: 75%;
+            height: 75%;
+            align-self: end;
+        }
+      }
+      .text{
+        flex :4;
+        flex-direction: column;
+        display: flex;
+        gap: 12px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        > span {
+          color: white;
+          font-weight: 700;
+        }
+      }
+      .buybutton{
+        flex:1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1%;
+      }
+    }  
+    .group-box2{
+      display: flex;
+      height: 100%;
+      width: 100%;
+      // max-width: 985px;
+      max-height: 195px;
+      gap: 24px;
+
+      .box-2, .box-3{
+        height: 100%;
+        width: 100%;
+        // max-height: 197px;
+        max-height: 99px;
+        // max-width: 480px;
+        box-shadow: 0px 2px 8px rgba(33, 192, 249, 0.15);
+        border-radius: 10px;
+      }
+
+      .box-2{
+        background-image: url("../../../../assets/payment/buy-cheaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .box-2, .box-3 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .group-text{
+          display: flex;
+          gap: 8px;
+          flex-direction: column;
+          span:nth-child(1){
+            font-size: 16px;
+            color: #212529;
+          }
+          span:nth-child(2){
+            font-weight: bold;
+            font-size: 22px;
+            color: #01BFFB;
+          }
+        }
+      }
+
+      .box-3 {
+        background: linear-gradient(92.76deg, #FFFFFF 0.44%, rgba(219, 246, 255, 0.48) 29.91%, rgba(0, 193, 255, 0.19) 99.7%);
+
+      }
+    }
+  }  
+}
